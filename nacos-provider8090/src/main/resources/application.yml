@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: nacos-provider-8090
+  cloud:
+    nacos:
+      discovery:
+        service: nacos-provider
+        server-addr: 127.0.0.1:8848
+        namespace: e21c72aa-e7e5-4d5b-9ab0-609be885dec7
+server:
+  port: 8090
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

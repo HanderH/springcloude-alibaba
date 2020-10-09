@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: nacos-consumer-8091
+  cloud:
+    nacos:
+      discovery:
+        service: nacos-consumer
+        server-addr: 127.0.0.1:8848
+        namespace: 23e942db-3c29-44ad-8e57-142ac2b87667
+server:
+  port: 8091
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
